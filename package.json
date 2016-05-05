@@ -1,0 +1,27 @@
+{
+  "name": "Angular2TS-Quick-Start",
+  "version": "1.0.0",
+  "description": "Getting started with Angular 2 using TypeScript",
+  "scripts": {
+    "start": "lite-server -c config.json",
+    "reset": "git reset --hard HEAD && git clean -df"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shyam-Chen/Angular2TS-Quick-Start.git"
+  },
+  "keywords": [
+    "Angular 2",
+    "TypeScript"
+  ],
+  "author": "Shyam Chen, 陳彥澄",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shyam-Chen/Angular2TS-Quick-Start/issues"
+  },
+  "homepage": "https://github.com/Shyam-Chen/Angular2TS-Quick-Start#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  }
+}
