@@ -14,27 +14,34 @@
       (function(global) {
         var ngVer = '@2.0.0-rc.1';
 
-        var  map = {
-          'app':                        'app',
-          'rxjs':                       'https://npmcdn.com/rxjs@5.0.0-beta.6',
+        var map = {
+          'app': 'app',
+          'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.6',
           'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api'
         };
 
         var packages = {
-          'app':                        { main: 'main.ts',  defaultExtension: 'ts' },
-          'rxjs':                       { defaultExtension: 'js' },
-          'angular2-in-memory-web-api': { defaultExtension: 'js' },
+          'app': {
+            main: 'main.ts',
+            defaultExtension: 'ts'
+          },
+          'rxjs': {
+            defaultExtension: 'js'
+          },
+          'angular2-in-memory-web-api': {
+            defaultExtension: 'js'
+          }
         };
 
         var packageNames = [
-            '@angular/common',
-            '@angular/compiler',
-            '@angular/core',
-            '@angular/http',
-            '@angular/platform-browser',
-            '@angular/platform-browser-dynamic',
-            '@angular/router',
-            '@angular/upgrade',
+          '@angular/common',
+          '@angular/compiler',
+          '@angular/core',
+          '@angular/http',
+          '@angular/platform-browser',
+          '@angular/platform-browser-dynamic',
+          '@angular/router',
+          '@angular/upgrade'
         ];
 
         packageNames.forEach(function(pkgName) {
@@ -42,7 +49,10 @@
         });
 
         packageNames.forEach(function(pkgName) {
-          packages[pkgName] = { main: 'index.js', defaultExtension: 'js' };
+          packages[pkgName] = {
+            main: 'index.js',
+            defaultExtension: 'js'
+          };
         });
 
         var config = {
@@ -54,7 +64,9 @@
           packages: packages
         }
 
-        if (global.filterSystemConfig) { global.filterSystemConfig(config); }
+        if (global.filterSystemConfig) {
+          global.filterSystemConfig(config);
+        }
 
         System.config(config);
       })(this);
