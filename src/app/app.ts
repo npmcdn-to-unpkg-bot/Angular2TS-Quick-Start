@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { HelloWorldComponent } from './components/hello-world';
 import { ClickMeComponent } from './components/click-me';
 import { ToggleMeComponent } from './components/toggle-me';
-import { NgForComponent } from './components/display-data';
+import { NgForComponent } from './components/ng-for';
 
 @Component({
   selector: 'app',
