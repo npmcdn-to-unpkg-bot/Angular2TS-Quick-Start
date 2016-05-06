@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { HelloWorldComponent } from './components/hello-world';
 import { ClickMeComponent } from './components/click-me';
 import { ToggleMeComponent } from './components/toggle-me';
+import { NgForComponent } from './components/display-data';
 
 @Component({
   selector: 'app',
@@ -17,6 +18,9 @@ import { ToggleMeComponent } from './components/toggle-me';
 
     <h3 class="title">Toggle Me Component</h3>
     <toggle-me></toggle-me>
+
+    <h3 class="title">Ng For Component</h3>
+    <ng-for></ng-for>
   `,
   styles: [`
     .title {
@@ -26,7 +30,8 @@ import { ToggleMeComponent } from './components/toggle-me';
   directives: [
     HelloWorldComponent,
     ClickMeComponent,
-    ToggleMeComponent
+    ToggleMeComponent,
+    NgForComponent
   ],
   providers: [],
   pipes: []
