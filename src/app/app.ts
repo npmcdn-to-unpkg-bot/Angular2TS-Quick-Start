@@ -4,6 +4,7 @@ import { HelloWorldComponent } from './components/hello-world';
 import { ClickMeComponent } from './components/click-me';
 import { ToggleMeComponent } from './components/toggle-me';
 import { NgForComponent } from './components/ng-for';
+import { NgClassComponent } from './components/ng-class';
 
 @Component({
   selector: 'app',
@@ -21,6 +22,9 @@ import { NgForComponent } from './components/ng-for';
 
     <h3 class="title">Ng For Component</h3>
     <ng-for></ng-for>
+
+    <h3 class="title">Ng Class Component</h3>
+    <ng-class></ng-class>
   `,
   styles: [`
     .title {
@@ -31,7 +35,8 @@ import { NgForComponent } from './components/ng-for';
     HelloWorldComponent,
     ClickMeComponent,
     ToggleMeComponent,
-    NgForComponent
+    NgForComponent,
+    NgClassComponent
   ],
   providers: [],
   pipes: []
