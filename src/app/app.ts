@@ -7,6 +7,7 @@ import { NgForComponent } from './components/ng-for';
 import { NgClassComponent } from './components/ng-class';
 import { NgStyleComponent } from './components/ng-style';
 import { NgIfComponent } from './components/ng-if';
+import { AtInputComponent } from './components/at-input';
 
 @Component({
   selector: 'app',
@@ -33,6 +34,9 @@ import { NgIfComponent } from './components/ng-if';
 
     <h3 class="title">Ng If Component</h3>
     <ng-if></ng-if>
+
+    <h3 class="title">At Input Component</h3>
+    <at-input something="Angular 2"></at-input>
   `,
   styles: [`
     .title {
@@ -46,7 +50,8 @@ import { NgIfComponent } from './components/ng-if';
     NgForComponent,
     NgClassComponent,
     NgStyleComponent,
-    NgIfComponent
+    NgIfComponent,
+    AtInputComponent
   ],
   providers: [],
   pipes: []
