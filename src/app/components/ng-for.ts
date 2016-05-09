@@ -9,8 +9,8 @@ interface List {
   template: `
     <p>Technologies:</p>
     <ul>
-      <li *ngFor="let item of list">
-        {{ item.label }}
+      <li *ngFor="let item of list; let i = index">
+        ({{ i + 1 }}) {{ item.label }}
       </li>
     </ul>
   `

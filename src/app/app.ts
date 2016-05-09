@@ -6,6 +6,7 @@ import { ToggleMeComponent } from './components/toggle-me';
 import { NgForComponent } from './components/ng-for';
 import { NgClassComponent } from './components/ng-class';
 import { NgStyleComponent } from './components/ng-style';
+import { NgIfComponent } from './components/ng-if';
 
 @Component({
   selector: 'app',
@@ -29,6 +30,9 @@ import { NgStyleComponent } from './components/ng-style';
 
     <h3 class="title">Ng Style Component</h3>
     <ng-style></ng-style>
+
+    <h3 class="title">Ng If Component</h3>
+    <ng-if></ng-if>
   `,
   styles: [`
     .title {
@@ -41,7 +45,8 @@ import { NgStyleComponent } from './components/ng-style';
     ToggleMeComponent,
     NgForComponent,
     NgClassComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgIfComponent
   ],
   providers: [],
   pipes: []
