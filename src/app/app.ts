@@ -9,6 +9,8 @@ import { NgStyleComponent } from './components/ng-style';
 import { NgIfComponent } from './components/ng-if';
 import { AtInputComponent } from './components/at-input';
 
+import { MessageLengthPipe } from './pipes/message-length';
+
 @Component({
   selector: 'app',
   template: `
@@ -37,6 +39,9 @@ import { AtInputComponent } from './components/at-input';
 
     <h3 class="title">At Input Component</h3>
     <at-input something="Angular 2"></at-input>
+
+    <h3 class="title">Message Length Pipe</h3>
+    <p>{{ message }} (Length: {{ message | length }})</p>
   `,
   styles: [`
     .title {
@@ -53,7 +58,13 @@ import { AtInputComponent } from './components/at-input';
     NgIfComponent,
     AtInputComponent
   ],
-  providers: [],
-  pipes: []
+  providers: [
+
+  ],
+  pipes: [
+    MessageLengthPipe
+  ]
 })
-export class App { }
+export class App {
+  public message: string = 'Hello Angular 2';
+}
