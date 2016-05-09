@@ -11,6 +11,6 @@ export class ClickMeComponent {
   public message: string = '';
 
   onClick() {
-    this.message = 'Hello Angular';
+    this.message = 'Hello Angular 2';
   }
 }

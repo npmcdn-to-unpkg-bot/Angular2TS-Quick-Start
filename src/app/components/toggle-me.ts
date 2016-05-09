@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'toggle-me',
   template: `
     <button (click)="onToggle()">Toggle Me</button>
-    <p>{{ message }} Angular</p>
+    <p>{{ message }} Angular 2</p>
   `
 })
 export class ToggleMeComponent {
