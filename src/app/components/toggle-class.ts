@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
   selector: 'toggle-class',
   template: `
     <button (click)="isClassVisible = !isClassVisible">Toggle Class</button>
-    <p [ngClass]="{ 'my-class': isClassVisible }">Hello Angular 2</p>
+    <p [ngClass]="{ 'try-it': isClassVisible }">Hello Angular 2</p>
   `,
   styles: [`
-    .my-class {
+    .try-it {
       color: #F44336
     }
   `]
