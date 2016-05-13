@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'key-up',
   template: `
-    <input #my (keyup)="onKeyup(my.value)">
+    <input #my="" (keyup)="onKeyup(my.value)">
     <p>{{ values }}</p>
   `
 })
