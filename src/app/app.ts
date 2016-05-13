@@ -9,6 +9,7 @@ import { NgStyleComponent } from './components/ng-style';
 import { NgIfComponent } from './components/ng-if';
 import { AtInputComponent } from './components/at-input';
 import { ToggleClassComponent } from './components/toggle-class';
+import { KeyUpComponent } from './components/key-up';
 
 import { MessageLengthPipe } from './pipes/message-length';
 
@@ -44,6 +45,9 @@ import { MessageLengthPipe } from './pipes/message-length';
     <h3 class="title">Toggle Class Component</h3>
     <toggle-class></toggle-class>
 
+    <h3 class="title">Key Up Component</h3>
+    <key-up></key-up>
+
     <h3 class="title">Message Length Pipe</h3>
     <p>{{ message }} (Length: {{ message | length }})</p>
   `,
@@ -61,7 +65,8 @@ import { MessageLengthPipe } from './pipes/message-length';
     NgStyleComponent,
     NgIfComponent,
     AtInputComponent,
-    ToggleClassComponent
+    ToggleClassComponent,
+    KeyUpComponent
   ],
   providers: [
 
