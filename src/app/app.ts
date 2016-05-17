@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 
 import { HelloWorldComponent } from './components/hello-world';
 import { ClickMeComponent } from './components/click-me';
@@ -12,6 +12,8 @@ import { ToggleClassComponent } from './components/toggle-class';
 import { KeyUpComponent } from './components/key-up';
 
 import { MessageLengthPipe } from './pipes/message-length';
+
+import { Languages } from './services/decided-language';
 
 @Component({
   selector: 'app',
@@ -50,6 +52,9 @@ import { MessageLengthPipe } from './pipes/message-length';
 
     <h3 class="title">Message Length Pipe</h3>
     <p>{{ message }} (Length: {{ message | length }})</p>
+
+    <h3 class="title">Decided Language Service</h3>
+    <p>Decided Language: {{ language }}</p>
   `,
   styles: [`
     .title {
@@ -68,8 +73,8 @@ import { MessageLengthPipe } from './pipes/message-length';
     ToggleClassComponent,
     KeyUpComponent
   ],
-  providers: [
-
+  viewProviders: [
+    Languages
   ],
   pipes: [
     MessageLengthPipe
@@ -77,4 +82,9 @@ import { MessageLengthPipe } from './pipes/message-length';
 })
 export class App {
   public message: string = 'Hello Angular 2';
+
+  public language: string;
+  constructor(@Inject(Languages) languages) {
+    this.language = languages.decide;
+  }
 }
