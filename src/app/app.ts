@@ -11,6 +11,8 @@ import { AtInputComponent } from './components/at-input';
 import { ToggleClassComponent } from './components/toggle-class';
 import { KeyUpComponent } from './components/key-up';
 
+import { AtColorDirective } from './directives/at-color';
+
 import { MessageLengthPipe } from './pipes/message-length';
 
 import { LanguagesService } from './services/languages';
@@ -52,6 +54,8 @@ import { LanguagesService } from './services/languages';
     <key-up></key-up>
 
     <!-- Directives -->
+    <h3 class="title">At Color Directive</h3>
+    <p atColor>Hello Angular 2</p>
 
     <!-- Pipes -->
     <h3 class="title">Message Length Pipe</h3>
@@ -67,6 +71,7 @@ import { LanguagesService } from './services/languages';
     }
   `],
   directives: [
+    // Components
     HelloWorldComponent,
     ClickMeComponent,
     ToggleMeComponent,
@@ -76,12 +81,17 @@ import { LanguagesService } from './services/languages';
     NgIfComponent,
     AtInputComponent,
     ToggleClassComponent,
-    KeyUpComponent
+    KeyUpComponent,
+
+    // Directives
+    AtColorDirective
   ],
   viewProviders: [
+    // Services
     LanguagesService
   ],
   pipes: [
+    // Pipes
     MessageLengthPipe
   ]
 })
