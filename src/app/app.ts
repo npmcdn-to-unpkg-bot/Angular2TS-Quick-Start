@@ -20,6 +20,7 @@ import { LanguagesService } from './services/languages';
   template: `
     <h1 class="title">Angular2TS Quick Start</h1>
 
+    <!-- Components -->
     <h3 class="title">Hello World Component</h3>
     <hello-world></hello-world>
 
@@ -50,9 +51,13 @@ import { LanguagesService } from './services/languages';
     <h3 class="title">Key Up Component</h3>
     <key-up></key-up>
 
+    <!-- Directives -->
+
+    <!-- Pipes -->
     <h3 class="title">Message Length Pipe</h3>
     <p>{{ message }} (Length: {{ message | length }})</p>
 
+    <!-- Services -->
     <h3 class="title">Languages Service</h3>
     <p>Decided Language: {{ language }}</p>
   `,
