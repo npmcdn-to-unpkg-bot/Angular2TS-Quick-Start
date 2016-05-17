@@ -13,7 +13,7 @@ import { KeyUpComponent } from './components/key-up';
 
 import { MessageLengthPipe } from './pipes/message-length';
 
-import { Languages } from './services/decided-language';
+import { LanguagesService } from './services/languages';
 
 @Component({
   selector: 'app',
@@ -53,7 +53,7 @@ import { Languages } from './services/decided-language';
     <h3 class="title">Message Length Pipe</h3>
     <p>{{ message }} (Length: {{ message | length }})</p>
 
-    <h3 class="title">Decided Language Service</h3>
+    <h3 class="title">Languages Service</h3>
     <p>Decided Language: {{ language }}</p>
   `,
   styles: [`
@@ -74,7 +74,7 @@ import { Languages } from './services/decided-language';
     KeyUpComponent
   ],
   viewProviders: [
-    Languages
+    LanguagesService
   ],
   pipes: [
     MessageLengthPipe
@@ -82,9 +82,9 @@ import { Languages } from './services/decided-language';
 })
 export class App {
   public message: string = 'Hello Angular 2';
+  public language: string = '';
 
-  public language: string;
-  constructor(@Inject(Languages) languages) {
-    this.language = languages.decide;
+  constructor(@Inject(LanguagesService) languages) {
+    this.language = languages.ts;
   }
 }
