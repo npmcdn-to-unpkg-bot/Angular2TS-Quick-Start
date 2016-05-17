@@ -4,7 +4,7 @@ import { Directive, ElementRef } from '@angular/core';
   selector: '[atColor]'
 })
 export class AtColorDirective {
-  constructor(element: ElementRef) {
+  constructor(private element: ElementRef) {
     element.nativeElement.style.color = '#F44336';
   }
 }
