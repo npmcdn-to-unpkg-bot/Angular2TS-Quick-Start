@@ -4,13 +4,13 @@ import { Component } from '@angular/core';
   selector: 'key-up',
   template: `
     <input #new="" (keyup)="onKeyup(new.value)">
-    <p>{{ values }}</p>
+    <p>{{ keyupValues }}</p>
   `
 })
 export class KeyUpComponent {
-  public valuse: string = '';
+  public keyupValues: string = '';
 
   onKeyup(value: string) {
-     this.values += `${value} | `;
+    this.keyupValues += `${value} | `;
   }
 }
