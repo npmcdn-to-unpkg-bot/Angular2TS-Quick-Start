@@ -26,56 +26,91 @@ import { LanguagesService } from './services/languages';
 
     <!-- Components -->
     <h3 class="title">Hello World Component</h3>
-    <hello-world></hello-world>
+    <div class="center">
+      <hello-world></hello-world>
+    </div>
 
     <h3 class="title">Click Me Component</h3>
-    <click-me></click-me>
+    <div class="center">
+      <click-me></click-me>
+    </div>
 
     <h3 class="title">Toggle Me Component</h3>
-    <toggle-me></toggle-me>
+    <div class="center">
+      <toggle-me></toggle-me>
+    </div>
 
     <h3 class="title">Ng For Component</h3>
-    <ng-for></ng-for>
+    <div class="center">
+      <ng-for></ng-for>
+    </div>
 
     <h3 class="title">Ng Class Component</h3>
-    <ng-class></ng-class>
+    <div class="center">
+      <ng-class></ng-class>
+    </div>
 
     <h3 class="title">Ng Style Component</h3>
-    <ng-style></ng-style>
+    <div class="center">
+      <ng-style></ng-style>
+    </div>
 
     <h3 class="title">Ng If Component</h3>
-    <ng-if></ng-if>
+    <div class="center">
+      <ng-if></ng-if>
+    </div>
 
     <h3 class="title">At Input Component</h3>
-    <at-input something="Angular 2"></at-input>
+    <div class="center">
+      <at-input something="Angular 2"></at-input>
+    </div>
 
     <h3 class="title">Toggle Class Component</h3>
-    <toggle-class></toggle-class>
+    <div class="center">
+      <toggle-class></toggle-class>
+    </div>
 
     <h3 class="title">Key Up Component</h3>
-    <key-up></key-up>
+    <div class="center">
+      <key-up></key-up>
+    </div>
 
     <h3 class="title">At Counter Component</h3>
-    <at-counter atCount="7" (atCountChange)="number2=$event"></at-counter>
+    <div class="center">
+      <at-counter atCount="7" (atCountChange)="number2=$event"></at-counter>
+    </div>
 
     <h3 class="title">Use Content Component</h3>
-    <use-content>Hi, Angular 2</use-content>
+    <div class="center">
+      <use-content>Hi, Angular 2</use-content>
+    </div>
 
     <!-- Directives -->
     <h3 class="title">At Color Directive</h3>
-    <p atColor>Hello Angular 2</p>
+    <div class="center">
+      <p atColor>Hello Angular 2</p>
+    </div>
 
     <!-- Pipes -->
     <h3 class="title">Message Length Pipe</h3>
-    <p>{{ message }} (Length: {{ message | length }})</p>
+    <div class="center">
+      <p>{{ message }} (Length: {{ message | length }})</p>
+    </div>
 
     <!-- Services -->
     <h3 class="title">Languages Service</h3>
-    <p>Decided Language: {{ language }}</p>
+    <div class="center">
+      <p>Decided Language: {{ language }}</p>
+    </div>
   `,
   styles: [`
     .title {
-      color: #3F51B5
+      color: #3F51B5;
+      text-align: center;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
     }
   `],
   directives: [
