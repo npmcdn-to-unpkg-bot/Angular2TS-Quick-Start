@@ -11,6 +11,7 @@ import { AtInputComponent } from './components/at-input';
 import { ToggleClassComponent } from './components/toggle-class';
 import { KeyUpComponent } from './components/key-up';
 import { AtCounterComponent } from './components/at-counter';
+import { UseContnetComponent } from './components/use-content';
 
 import { AtColorDirective } from './directives/at-color';
 
@@ -57,6 +58,9 @@ import { LanguagesService } from './services/languages';
     <h3 class="title">At Counter Component</h3>
     <at-counter atCount="7" (atCountChange)="number2=$event"></at-counter>
 
+    <h3 class="title">Use Content Component</h3>
+    <use-content>Hi, Angular 2</use-content>
+
     <!-- Directives -->
     <h3 class="title">At Color Directive</h3>
     <p atColor>Hello Angular 2</p>
@@ -87,6 +91,7 @@ import { LanguagesService } from './services/languages';
     ToggleClassComponent,
     KeyUpComponent,
     AtCounterComponent,
+    UseContnetComponent,
 
     // Directives
     AtColorDirective
