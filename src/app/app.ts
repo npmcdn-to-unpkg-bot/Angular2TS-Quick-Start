@@ -10,6 +10,7 @@ import { NgIfComponent } from './components/ng-if';
 import { AtInputComponent } from './components/at-input';
 import { ToggleClassComponent } from './components/toggle-class';
 import { KeyUpComponent } from './components/key-up';
+import { AtCounterComponent } from './components/at-counter';
 
 import { AtColorDirective } from './directives/at-color';
 
@@ -53,6 +54,9 @@ import { LanguagesService } from './services/languages';
     <h3 class="title">Key Up Component</h3>
     <key-up></key-up>
 
+    <h3 class="title">At Counter Component</h3>
+    <at-counter atCount="7" (atCountChange)="number2=$event"></at-counter>
+
     <!-- Directives -->
     <h3 class="title">At Color Directive</h3>
     <p atColor>Hello Angular 2</p>
@@ -82,6 +86,7 @@ import { LanguagesService } from './services/languages';
     AtInputComponent,
     ToggleClassComponent,
     KeyUpComponent,
+    AtCounterComponent,
 
     // Directives
     AtColorDirective
