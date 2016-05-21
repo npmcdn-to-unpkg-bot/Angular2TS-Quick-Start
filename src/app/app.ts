@@ -12,6 +12,7 @@ import { ToggleClassComponent } from './components/toggle-class';
 import { KeyUpComponent } from './components/key-up';
 import { AtCounterComponent } from './components/at-counter';
 import { UseContnetComponent } from './components/use-content';
+import { GetDataComponent } from './components/get-data';
 
 import { AtColorDirective } from './directives/at-color';
 
@@ -26,80 +27,85 @@ import { LanguagesService } from './services/languages';
 
     <!-- Components -->
     <h3 class="title">Hello World Component</h3>
-    <div class="center">
+    <div class="content">
       <hello-world></hello-world>
     </div>
 
     <h3 class="title">Click Me Component</h3>
-    <div class="center">
+    <div class="content">
       <click-me></click-me>
     </div>
 
     <h3 class="title">Toggle Me Component</h3>
-    <div class="center">
+    <div class="content">
       <toggle-me></toggle-me>
     </div>
 
     <h3 class="title">Ng For Component</h3>
-    <div class="center">
+    <div class="content">
       <ng-for></ng-for>
     </div>
 
     <h3 class="title">Ng Class Component</h3>
-    <div class="center">
+    <div class="content">
       <ng-class></ng-class>
     </div>
 
     <h3 class="title">Ng Style Component</h3>
-    <div class="center">
+    <div class="content">
       <ng-style></ng-style>
     </div>
 
     <h3 class="title">Ng If Component</h3>
-    <div class="center">
+    <div class="content">
       <ng-if></ng-if>
     </div>
 
     <h3 class="title">At Input Component</h3>
-    <div class="center">
+    <div class="content">
       <at-input something="Angular 2"></at-input>
     </div>
 
     <h3 class="title">Toggle Class Component</h3>
-    <div class="center">
+    <div class="content">
       <toggle-class></toggle-class>
     </div>
 
     <h3 class="title">Key Up Component</h3>
-    <div class="center">
+    <div class="content">
       <key-up></key-up>
     </div>
 
     <h3 class="title">At Counter Component</h3>
-    <div class="center">
+    <div class="content">
       <at-counter atCount="7" (atCountChange)="number2=$event"></at-counter>
     </div>
 
     <h3 class="title">Use Content Component</h3>
-    <div class="center">
+    <div class="content">
       <use-content>Hi, Angular 2</use-content>
+    </div>
+
+    <h3 class="title">Get Data Component</h3>
+    <div class="content">
+      <get-data>Hi, Angular 2</get-data>
     </div>
 
     <!-- Directives -->
     <h3 class="title">At Color Directive</h3>
-    <div class="center">
+    <div class="content">
       <p atColor>Hello Angular 2</p>
     </div>
 
     <!-- Pipes -->
     <h3 class="title">Message Length Pipe</h3>
-    <div class="center">
+    <div class="content">
       <p>{{ message }} (Length: {{ message | length }})</p>
     </div>
 
     <!-- Services -->
     <h3 class="title">Languages Service</h3>
-    <div class="center">
+    <div class="content">
       <p>Decided Language: {{ language }}</p>
     </div>
   `,
@@ -108,7 +114,7 @@ import { LanguagesService } from './services/languages';
       color: #3F51B5;
       text-align: center;
     }
-    .center {
+    .content {
       display: flex;
       justify-content: center;
     }
@@ -127,7 +133,7 @@ import { LanguagesService } from './services/languages';
     KeyUpComponent,
     AtCounterComponent,
     UseContnetComponent,
-
+    GetDataComponent,
     // Directives
     AtColorDirective
   ],
