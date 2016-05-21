@@ -14,6 +14,7 @@ import { KeyUpComponent } from './components/key-up';
 import { AtCounterComponent } from './components/at-counter';
 import { UseContnetComponent } from './components/use-content';
 import { GetDataComponent } from './components/get-data';
+import { AtPropertiesComponent } from './components/at-properties';
 
 import { AtColorDirective } from './directives/at-color';
 
@@ -96,7 +97,12 @@ import { LanguagesService } from './services/languages';
 
     <h3 class="title">Get Data Component</h3>
     <div class="content">
-      <get-data>Hi, Angular 2</get-data>
+      <get-data></get-data>
+    </div>
+
+    <h3 class="title">At Properties Component</h3>
+    <div class="content">
+      <at-properties [atVersion]="2"></at-properties>
     </div>
 
     <hr>
@@ -149,6 +155,7 @@ import { LanguagesService } from './services/languages';
     AtCounterComponent,
     UseContnetComponent,
     GetDataComponent,
+    AtPropertiesComponent,
     // Directives
     AtColorDirective
   ],
