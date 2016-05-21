@@ -25,6 +25,8 @@ import { LanguagesService } from './services/languages';
   template: `
     <h1 class="title">Angular2TS Quick Start</h1>
 
+    <hr><hr>
+
     <!-- Components -->
     <h3 class="title">Hello World Component</h3>
     <div class="content">
@@ -91,22 +93,28 @@ import { LanguagesService } from './services/languages';
       <get-data>Hi, Angular 2</get-data>
     </div>
 
+    <hr>
+
     <!-- Directives -->
     <h3 class="title">At Color Directive</h3>
     <div class="content">
       <p atColor>Hello Angular 2</p>
     </div>
 
-    <!-- Pipes -->
-    <h3 class="title">Message Length Pipe</h3>
-    <div class="content">
-      <p>{{ message }} (Length: {{ message | length }})</p>
-    </div>
+    <hr>
 
     <!-- Services -->
     <h3 class="title">Languages Service</h3>
     <div class="content">
       <p>Decided Language: {{ language }}</p>
+    </div>
+
+    <hr>
+
+    <!-- Pipes -->
+    <h3 class="title">Message Length Pipe</h3>
+    <div class="content">
+      <p>{{ message }} (Length: {{ message | length }})</p>
     </div>
   `,
   styles: [`
