@@ -12,7 +12,7 @@ import { AtInputComponent } from './components/at-input';
 import { ToggleClassComponent } from './components/toggle-class';
 import { KeyUpComponent } from './components/key-up';
 import { AtCounterComponent } from './components/at-counter';
-import { UseContnetComponent } from './components/use-content';
+import { ContentProjectionComponent } from './components/content-projection';
 import { GetDataComponent } from './components/get-data';
 import { AtPropertiesComponent } from './components/at-properties';
 
@@ -90,9 +90,9 @@ import { LanguagesService } from './services/languages';
       <at-counter atCount="7" (atCountChange)="number2=$event"></at-counter>
     </div>
 
-    <h3 class="title">Use Content Component</h3>
+    <h3 class="title">Content Projection Component</h3>
     <div class="content">
-      <use-content>Hi, Angular 2</use-content>
+      <content-projection>Hi, Angular 2</content-projection>
     </div>
 
     <h3 class="title">Get Data Component</h3>
@@ -153,7 +153,7 @@ import { LanguagesService } from './services/languages';
     ToggleClassComponent,
     KeyUpComponent,
     AtCounterComponent,
-    UseContnetComponent,
+    ContentProjectionComponent,
     GetDataComponent,
     AtPropertiesComponent,
     // Directives

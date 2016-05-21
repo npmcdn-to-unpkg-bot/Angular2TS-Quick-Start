@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'use-content',
+  selector: 'content-projection',
   template: `
     <p>Hi, TypeScript</p>
     <ng-content></ng-content>
   `
 })
-export class UseContnetComponent { }
+export class ContentProjectionComponent { }
