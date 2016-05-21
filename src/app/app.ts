@@ -7,6 +7,7 @@ import { NgForComponent } from './components/ng-for';
 import { NgClassComponent } from './components/ng-class';
 import { NgStyleComponent } from './components/ng-style';
 import { NgIfComponent } from './components/ng-if';
+import { NgSwitchComponent } from './components/ng-switch';
 import { AtInputComponent } from './components/at-input';
 import { ToggleClassComponent } from './components/toggle-class';
 import { KeyUpComponent } from './components/key-up';
@@ -61,6 +62,11 @@ import { LanguagesService } from './services/languages';
     <h3 class="title">Ng If Component</h3>
     <div class="content">
       <ng-if></ng-if>
+    </div>
+
+    <h3 class="title">Ng Switch Component</h3>
+    <div class="content">
+      <ng-switch></ng-switch>
     </div>
 
     <h3 class="title">At Input Component</h3>
@@ -136,6 +142,7 @@ import { LanguagesService } from './services/languages';
     NgClassComponent,
     NgStyleComponent,
     NgIfComponent,
+    NgSwitchComponent,
     AtInputComponent,
     ToggleClassComponent,
     KeyUpComponent,
