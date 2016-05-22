@@ -4,7 +4,7 @@ import { Http, Response } from '@angular/http';
 @Component({
   selector: 'on-request',
   template: `
-    <button type="button" (click)="onRequest()">請求</button>
+    <button type="button" (click)="onRequest()">Request</button>
     <pre>{{ response | json }}</pre>
   `
 })
