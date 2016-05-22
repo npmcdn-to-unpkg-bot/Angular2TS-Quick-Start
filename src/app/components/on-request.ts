@@ -6,7 +6,7 @@ import { Http, Response } from '@angular/http';
   template: `
     <button type="button" (click)="onRequest()">請求</button>
     <pre>{{ response | json }}</pre>
-`
+  `
 })
 export class OnRequestComponent {
   public response: Object;
