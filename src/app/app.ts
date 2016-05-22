@@ -15,6 +15,7 @@ import { AtCounterComponent } from './components/at-counter';
 import { ContentProjectionComponent } from './components/content-projection';
 import { GetDataComponent } from './components/get-data';
 import { AtPropertiesComponent } from './components/at-properties';
+import { OnRequestComponent } from './components/on-request'
 
 import { AtColorDirective } from './directives/at-color';
 
@@ -105,6 +106,11 @@ import { LanguagesService } from './services/languages';
       <at-properties [atVersion]="2"></at-properties>
     </div>
 
+    <h3 class="title">On Request Component</h3>
+    <div class="content">
+      <on-request></on-request>
+    </div>
+
     <hr>
 
     <!-- Directives -->
@@ -156,6 +162,7 @@ import { LanguagesService } from './services/languages';
     ContentProjectionComponent,
     GetDataComponent,
     AtPropertiesComponent,
+    OnRequestComponent,
     // Directives
     AtColorDirective
   ],
