@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class ClickMeComponent {
   public message: string = '';
 
-  onClick() {
+  onClick(): string {
     this.message = 'Hello Angular 2';
   }
 }

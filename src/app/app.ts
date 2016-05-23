@@ -13,6 +13,7 @@ import { ToggleClassComponent } from './components/toggle-class';
 import { KeyUpComponent } from './components/key-up';
 import { AtCounterComponent } from './components/at-counter';
 import { ContentProjectionComponent } from './components/content-projection';
+import { MoreContentComponent } from './components/more-content';
 import { GetDataComponent } from './components/get-data';
 import { AtPropertiesComponent } from './components/at-properties';
 import { OnRequestComponent } from './components/on-request'
@@ -96,6 +97,15 @@ import { LanguagesService } from './services/languages';
       <content-projection>Hi, Angular 2</content-projection>
     </div>
 
+    <h3 class="title">More Content Component</h3>
+    <div class="content">
+      <more-content>
+        <p js>Hi, JavaScript</p>
+        <p coffee>Hi, CoffeeScript</p>
+        <p ts>Hi, TypeScript</p>
+      </more-content>
+    </div>
+
     <h3 class="title">Get Data Component</h3>
     <div class="content">
       <get-data></get-data>
@@ -160,6 +170,7 @@ import { LanguagesService } from './services/languages';
     KeyUpComponent,
     AtCounterComponent,
     ContentProjectionComponent,
+    MoreContentComponent,
     GetDataComponent,
     AtPropertiesComponent,
     OnRequestComponent,
