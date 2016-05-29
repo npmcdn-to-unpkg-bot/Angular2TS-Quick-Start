@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { HelloWorldComponent } from './components/hello-world';
 import { ClickMeComponent } from './components/click-me';
@@ -190,7 +190,7 @@ export class App {
   public message: string = 'Hello Angular 2';
   public language: string = '';
 
-  constructor(@Inject(LanguagesService) languages) {
+  constructor(private languages: LanguagesService) {
     this.language = languages.ts;
   }
 }
