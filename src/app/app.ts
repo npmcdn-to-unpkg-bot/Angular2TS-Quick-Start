@@ -16,7 +16,7 @@ import { ContentProjectionComponent } from './components/content-projection';
 import { MoreContentComponent } from './components/more-content';
 import { GetDataComponent } from './components/get-data';
 import { AtPropertiesComponent } from './components/at-properties';
-import { OnRequestComponent } from './components/on-request'
+import { OnRequestComponent } from './components/on-request';
 
 import { AtColorDirective } from './directives/at-color';
 
