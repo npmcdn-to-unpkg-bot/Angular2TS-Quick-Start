@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { HelloWorldComponent } from './components/hello-world';
 import { ClickMeComponent } from './components/click-me';
@@ -23,6 +23,7 @@ import { AtColorDirective } from './directives/at-color';
 import { MessageLengthPipe } from './pipes/message-length';
 
 import { LanguagesService } from './services/languages';
+import { ListService } from './services/list';
 
 @Component({
   selector: 'app',
@@ -137,6 +138,13 @@ import { LanguagesService } from './services/languages';
       <p>Decided Language: {{ language }}</p>
     </div>
 
+    <h3 class="title">List Service</h3>
+    <div class="content">
+      <ul>
+        <li *ngFor="let item of list">{{ item.label }}</li>
+      </ul>
+    </div>
+
     <hr>
 
     <!-- Pipes -->
@@ -179,18 +187,30 @@ import { LanguagesService } from './services/languages';
   ],
   viewProviders: [
     // Services
-    LanguagesService
+    LanguagesService,
+    ListService
   ],
   pipes: [
     // Pipes
     MessageLengthPipe
   ]
 })
-export class App {
+export class App implements OnInit {
   public message: string = 'Hello Angular 2';
   public language: string = '';
 
-  constructor(private languages: LanguagesService) {
+  constructor(
+    private languages: LanguagesService,
+    private listService: ListService
+  ) {
     this.language = languages.ts;
+  }
+
+  getList() {
+    this.list = this.listService.getList();
+  }
+
+  ngOnInit() {
+    this.getList();
   }
 }
