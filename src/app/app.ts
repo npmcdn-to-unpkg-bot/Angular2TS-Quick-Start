@@ -90,7 +90,7 @@ import { ListService } from './services/list';
 
     <h3 class="title">At Counter Component</h3>
     <div class="content">
-      <at-counter atCount="7" (atCountChange)="number2=$event"></at-counter>
+      <at-counter atCount="7" (atCountChange)="$event"></at-counter>
     </div>
 
     <h3 class="title">Content Projection Component</h3>
