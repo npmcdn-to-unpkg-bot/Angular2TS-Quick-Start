@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Getting started with Angular 2 using TypeScript",
   "scripts": {
-    "start": "lite-server -c config.json",
+    "start": "lite-server -c bsconfig.json",
     "reset": "git reset --hard HEAD && git clean -df"
   },
   "repository": {
