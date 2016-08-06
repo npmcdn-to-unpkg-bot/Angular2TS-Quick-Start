@@ -1,4 +1,3 @@
-
 const ngVer: string = '@2.0.0-rc.4';
 const routerVer: string = '@3.0.0-beta.2';
 const formsVer: string = '@0.2.0';
@@ -15,9 +14,17 @@ const map: any = {
 };
 
 const packages: any = {
-  'app': { main: 'main.ts', defaultExtension: 'ts' },
-  'rxjs': { defaultExtension: 'js' },
-  'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' }
+  'app': {
+    main: 'main.ts',
+    defaultExtension: 'ts'
+  },
+  'rxjs': {
+    defaultExtension: 'js'
+  },
+  'angular2-in-memory-web-api': {
+    main: 'index.js',
+    defaultExtension: 'js'
+  }
 };
 
 const ngPackageNames: string[] = [
@@ -35,18 +42,31 @@ ngPackageNames.forEach((pkgName: any) => {
 });
 
 ngPackageNames.forEach((pkgName: any) => {
-  packages[`@angular/${pkgName}`] = { main: `/bundles/${pkgName}.umd.js`, defaultExtension: 'js' };
+  packages[`@angular/${pkgName}`] = {
+    main: `/bundles/${pkgName}.umd.js`,
+    defaultExtension: 'js'
+  };
 });
 
-packages['@angular/router'] = { main: 'index.js', defaultExtension: 'js' };
+packages['@angular/router'] = {
+  main: 'index.js',
+  defaultExtension: 'js'
+};
 
-packages['@angular/forms'] = { main: 'index.js', defaultExtension: 'js' };
+packages['@angular/forms'] = {
+  main: 'index.js',
+  defaultExtension: 'js'
+};
 
 const config: any = {
   transpiler: 'ts',
-  typescriptOptions: { tsconfig: false },
+  typescriptOptions: {
+    tsconfig: false
+  },
   meta: {
-    'typescript': { 'exports': 'ts' }
+    'typescript': {
+      'exports': 'ts'
+    }
   },
   map: map,
   packages: packages
