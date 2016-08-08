@@ -61,7 +61,7 @@ packages['@angular/forms'] = {
 const config: any = {
   transpiler: 'ts',
   typescriptOptions: {
-    tsconfig: false
+    tsconfig: true
   },
   meta: {
     'typescript': {
