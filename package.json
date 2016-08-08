@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Getting started with Angular 2 using TypeScript",
   "scripts": {
-    "start": "npm run tsc:system && lite-server -c bsconfig.json",
-    "tsc:system": "tsc src/system.config.ts",
-    "reset": "git reset --hard HEAD && git clean -df"
+    "start": "npm run tsc && npm run lite",
+    "tsc": "tsc src/system.config.ts",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server -c bsconfig.json",
+    "reset": "git reset --hard HEAD && git clean -df",
+    "postinstall": "npm run typings -- install",
+    "typings": "typings"
   },
   "repository": {
     "type": "git",

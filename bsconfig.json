@@ -1,6 +1,6 @@
 {
   "port": 3000,
-  "files": ["./src/**/*.{html,css,ts}"],
+  "files": ["./src/**/*.{html,css,js,ts}"],
   "server": {
     "baseDir": "./src"
   }
