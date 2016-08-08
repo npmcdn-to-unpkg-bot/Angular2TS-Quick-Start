@@ -10,7 +10,7 @@ const map: any = {
   'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api',
   'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.6',
   'ts': 'https://npmcdn.com/plugin-typescript@4.0.10/lib/plugin.js',
-  'typescript': 'https://npmcdn.com/typescript@1.9.0-dev.20160409/lib/typescript.js'
+  'typescript': 'https://npmcdn.com/typescript@1.8.10/lib/typescript.js'
 };
 
 const packages: any = {

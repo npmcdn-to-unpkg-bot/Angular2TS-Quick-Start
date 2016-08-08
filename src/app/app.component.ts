@@ -9,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
     </div>
   `,
   styles: [`
-    .title { color: #3F51B5; text-align: center; }
-    .content { display: flex; justify-content: center; }
+    .title {
+      color: #3F51B5;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+    }
   `],
   directives: [],
   providers: [],
@@ -18,7 +25,7 @@ import { Component, OnInit } from '@angular/core';
   pipes: []
 })
 export class AppComponent implements OnInit {
-  ngOnInit(): void {
+  public ngOnInit(): void {
     console.log('Hello Angular 2')
   }
 }
