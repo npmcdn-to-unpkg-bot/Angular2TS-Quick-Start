@@ -1,6 +1,6 @@
-const ngVer: string = '@2.0.0-rc.4';
-const routerVer: string = '@3.0.0-beta.2';
-const formsVer: string = '@0.2.0';
+const ngVer: string = '@2.0.0-rc.5';
+const routerVer: string = '@3.0.0-rc.1';
+const formsVer: string = '@0.3.0';
 
 const map: any = {
   'app': 'app',
