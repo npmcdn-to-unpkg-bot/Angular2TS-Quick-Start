@@ -1,6 +1,7 @@
 # Angular2TS Quick Start
 
 ### Getting Started
+
 ##### 1. Download ZIP
 :point_right: [Download](https://github.com/Shyam-Chen/Angular2TS-Quick-Start/archive/master.zip) :point_left:
 
