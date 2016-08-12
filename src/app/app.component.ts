@@ -10,10 +10,7 @@ import { Component, OnInit } from '@angular/core';
       color: #3F51B5;
     }
   `],
-  directives: [],
-  providers: [],
-  viewProviders: [],
-  pipes: []
+  viewProviders: []
 })
 export class AppComponent implements OnInit {
   public ngOnInit(): void {
