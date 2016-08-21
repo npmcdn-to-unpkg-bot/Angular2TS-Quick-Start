@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <h3 class="title">Angular2TS Quick Start</h3>
   `,
-  styles: [`
-    .title {
-      color: #3F51B5;
-    }
-  `],
+  styles: [``],
   viewProviders: []
 })
 export class AppComponent implements OnInit {
